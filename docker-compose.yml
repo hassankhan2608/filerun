@@ -27,8 +27,8 @@ services:
       - db
     links:
       - db:db
-    ports:
-      - "80:80"
     volumes:
       - /filerun/html:/var/www/html
       - /filerun/user-files:/user-files
+      - /home/ubuntu/teldrive/teldrive_mount:/teldrive_data
+
